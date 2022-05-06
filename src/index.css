@@ -1,13 +1,75 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-todo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todos-h {
+  text-align: center;
+}
+
+.todo-input {
+  border: 2px solid black;
+  border-radius: 3px;
+  height: 30px;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: min(650px, 80%);
+}
+
+.todo-item {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-text {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.complete-btn {
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+.complete-btn.is-checked {
+  background-color: green;
+}
+
+.remove-btn {
+  height: 30px;
+  padding: 0 7px;
+  border: 2px solid black;
+  border-radius: 2px;
+  font-family: "Ubuntu";
+  font-size: 0.9em;
 }
